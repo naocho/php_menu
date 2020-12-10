@@ -17,6 +17,9 @@
 
 Route::get('/', 'MenuController@index');
 
+Route::resource('Menu', 'MenuController');
+// 全てのコントローラのアクションを作ってくれている
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
