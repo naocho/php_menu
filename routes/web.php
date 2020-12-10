@@ -17,6 +17,8 @@
 
 Route::get('/', 'MenuController@index');
 
+// Route::post('Menu/create', 'MenuController@create');
+
 Route::resource('Menu', 'MenuController');
 // 全てのコントローラのアクションを作ってくれている
 

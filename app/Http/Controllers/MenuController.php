@@ -29,9 +29,11 @@ class MenuController extends Controller
         return $view;
     }
 
-    public function create()
-    {
-        return view('create');
+    public function create(Request $item){
+    
+        $all_inputs = $item->all();
+
+        return view('index');
     }
 
     public function destroy()
