@@ -29,12 +29,22 @@ class MenuController extends Controller
         return $view;
     }
 
-    public function create(Request $item){
-    
-        $all_inputs = $item->all();
+    // public function store(){
 
-        return view('index');
-    }
+    //     return view('create');
+    // }
+
+    // public function create(Request $item){
+    
+    //     $all_inputs = $item->all();
+
+    //     return view('index');
+    // }
+
+    // public function store(){
+
+    //     return view('create');
+    // }
 
     public function destroy()
     {

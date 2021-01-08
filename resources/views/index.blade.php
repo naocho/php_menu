@@ -24,18 +24,5 @@
       <a></a>
     </div>
   </div>
-  <div class="start-right">
-    <h1 class="top-font-right">プロフィール</h1>
-    <div>
-      <table>
-      @foreach($user as $user)
-      <!-- ユーザーとユーザーのインスタンス変数を合わせる必要があり合わせる事によりテーブルから同じ値を持ってくる事が出来る -->
-        <tr>
-          <td>{{$user->name}} {{$user->email}} {{$user->email_verified_at}}</td>
-        </tr>
-      @endforeach
-      </table>
-    </div>
-  </div>
 </div>
 </body>

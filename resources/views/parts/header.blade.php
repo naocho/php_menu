@@ -12,7 +12,7 @@
                               document.getElementById('logout-form').submit();" class="login-right">
                               ログアウト
                     </a>
-                    <a class="login-right" href="{{ url('/Menu/create') }}">投稿</a>
+                    <a class="login-right" href="{{ url('Images/index') }}">投稿</a>
                     
                     <form id='logout-form' action={{ route('logout')}} method="POST" style="display: none;">
                     

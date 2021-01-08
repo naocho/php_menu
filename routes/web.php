@@ -17,11 +17,13 @@
 
 Route::get('/', 'MenuController@index');
 
+Route::get('Images/index', 'ImagesController@index');
+
+// Route::get('Menu/store', 'MenuController@store');
+
+// Route::post('Images/create', 'ImagesController@create');
+
 // Route::post('Menu/create', 'MenuController@create');
 
 Route::resource('Menu', 'MenuController');
 // 全てのコントローラのアクションを作ってくれている
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
